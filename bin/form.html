@@ -1,0 +1,26 @@
+注册表单
+
+<form method="post" action="">
+	<input type="text" name="username"> <br>
+	<input type="email" required=""  name="email"><br>
+	<input type="password"  required="" name="password"><br>
+	<input id="age_range" type="range" max="60" min="18" onchange="showage()" name="age"> <span id="age_tip">18</span><br>
+	<input type="number" name="ager"><br>
+	<input type="date" name="birthday"><br>
+	<input list="searchlist"  type="url"  required="" ><br>
+		<datalist id="searchlist">
+			<option value="我">
+			<option value="你">
+			<option value="他">
+		</datalist>
+</form>
+<input type="submit">
+
+<script type="text/javascript">
+
+	function  showage(){
+	var age_val = document.getElementById("age_range").value;
+	 document.getElementById("age_tip").innerHTML = age_val;
+	}
+
+</script>

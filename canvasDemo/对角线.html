@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>canvas对角线</title>
+</head>
+<body>
+        <canvas id="canvas" style="border: 1px solid red" width="500px" height="500px"> </canvas>
+        <canvas id="canvas1" style="border: 1px solid red; width:500px; height:500px;"> </canvas>
+
+</body>
+</html>
+<script type="text/javascript">
+       var canvas =  document.querySelector("#canvas")
+       var ctx = canvas.getContext("2d");
+       ctx.moveTo(0,0);
+       ctx.lineTo(500,500);
+       ctx.stroke();
+</script>
